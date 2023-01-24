@@ -1,0 +1,26 @@
+/* Print styles */
+@page {
+    size: A4 landscape; /* set the page size to A4 in landscape orientation */
+    margin: 0; /* remove the default margins */
+}
+/*content styles*/
+.content {
+    font-size: 10pt;
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    height: 100vh;
+}
+
+.column {
+    position: relative;
+}
+
+/* Footer styles */
+/* .footer { */
+/* position: absolute;
+    bottom: 0px; */
+/* background-color: #ccc; */
+/* grid-column: 1 / 4; */
+/* } */
