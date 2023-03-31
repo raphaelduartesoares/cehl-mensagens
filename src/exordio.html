@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Printable A4 Landscape Page</title>
+        <link rel="stylesheet" type="text/css" media="print" href="assets/css/style.css" />
+        <script src="assets/js/exordio.js" type="module"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div v-for="message in data" class="content" style="page-break-after: always">
+                <div v-for="n in 3" class="column">
+                    <div style="text-align: center">
+                        <h3 style="text-transform: uppercase">{{message.title}}</h3>
+                    </div>
+                    <p style="font-style: italic">{{message.quote}}</p>
+                    <p v-html="message.message"></p>
+                    <div style="text-align: center">
+                        <p style="padding: 0px 10%">
+                            <small>
+                                Mensagem {{message.number}} do livro Fonte Viva - Pelo espírito Emmanuel, psicografado por
+                                Francisco Cândido Xavier.
+                            </small>
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <div style="text-align: center">
+                            <img src="assets/images/logo-completa-transparente.png" alt="" style="width: 150px" />
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between">
+                            <p>
+                                <span style="font-weight: bold">Atividades</span><br />
+                                <span>Palestras: Quarta às 20h</span> <br />
+                                <span>Estudos: Segunda às 20h15 e Terça às 20h</span> <br />
+                                <span>Conversa fraterna: Sábado às 10h (quinzenal)</span> <br />
+                                <span>Evangelização infantil: Sábado às 10h (quinzenal)</span> <br />
+                                <span>Campanha do quilo: Domingo às 8h30 (quinzenal)</span>
+                            </p>
+                            <div>
+                                <img src="assets/images/qrcode-text-cehl.site .png" alt="" srcset="" style="width: 80px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
