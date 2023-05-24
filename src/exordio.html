@@ -9,6 +9,11 @@
         <div id="app">
             <div v-for="message in data" class="content" style="page-break-after: always">
                 <div v-for="n in 3" class="column">
+                    <div class="header">
+                        <div style="text-align: center">
+                            <img src="assets/images/logo-completa-transparente.png" alt="" style="width: 150px" />
+                        </div>
+                    </div>
                     <div style="text-align: center">
                         <h3 style="text-transform: uppercase">{{message.title}}</h3>
                     </div>
@@ -23,10 +28,11 @@
                         </p>
                     </div>
                     <div class="footer">
-                        <div style="text-align: center">
-                            <img src="assets/images/logo-completa-transparente.png" alt="" style="width: 150px" />
-                        </div>
                         <div style="display: flex; flex-direction: row; justify-content: space-between">
+                            <!-- <div>
+                                <img src="assets/images/qrcode-text-cehl.site .png" alt="" srcset="" style="width: 80px" />
+                            </div> -->
+                            <!-- <p style="text-align: center; margin-left: 5px; margin-right: 5px"> -->
                             <p>
                                 <span style="font-weight: bold">Atividades</span><br />
                                 <span>Palestras: Quarta às 20h</span> <br />
@@ -35,8 +41,14 @@
                                 <span>Evangelização infantil: Sábado às 10h (quinzenal)</span> <br />
                                 <span>Campanha do quilo: Domingo às 8h30 (quinzenal)</span>
                             </p>
-                            <div>
-                                <img src="assets/images/qrcode-text-cehl.site .png" alt="" srcset="" style="width: 80px" />
+                            <div style="display: flex; flex-direction: column">
+                                <img
+                                    src="assets/images/qrcode-doacoes-pix-texto.png"
+                                    alt=""
+                                    srcset=""
+                                    style="width: 55px; margin-bottom: 10px"
+                                />
+                                <img src="assets/images/qrcode-text-cehl.site .png" alt="" srcset="" style="width: 55px" />
                             </div>
                         </div>
                     </div>
