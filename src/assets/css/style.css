@@ -5,7 +5,7 @@
 }
 /*content styles*/
 .content {
-    font-size: 9pt;
+    font-size: 11px;
     color: #000;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -15,18 +15,20 @@
 
 .column {
     position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
 }
 
 .header {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 /* Footer styles */
-/* .footer { */
-/* position: absolute;
+.footer {
+    font-size: 10px;
+    /* position: absolute; */
+    /* 
     bottom: 0px; */
-/* background-color: #ccc; */
-/* grid-column: 1 / 4; */
-/* } */
+    /* background-color: #ccc; */
+    /* grid-column: 1 / 4; */
+}
